@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@drawable/btn_sqr_gry_brdr_drkgry"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginVertical="5dp"
+        android:paddingHorizontal="5dp"
+        android:text="알림"
+        android:textSize="20dp"
+        android:textColor="#8F193C"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:id="@+id/v_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#8F193C"
+        android:layout_below="@+id/tv_dialog_title"
+        />
+
+    <TextView
+        android:id="@+id/tv_error_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:paddingHorizontal="30dp"
+        android:text="메세지"
+        android:textSize="20dp"
+        android:layout_below="@id/v_divider"
+        />
+
+    <View
+        android:id="@+id/v_divider_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/border_gray"
+        android:layout_below="@+id/tv_error_message"
+        />
+
+    <Button
+        android:id="@+id/button_error_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="10dp"
+        android:background="#8F193C"
+        android:clickable="true"
+        android:text="확인"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_below="@+id/v_divider_2"
+        />
+
+
+</RelativeLayout>

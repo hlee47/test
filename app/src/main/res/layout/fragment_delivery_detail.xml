@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@color/color_background"
+    >
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingVertical="10dp"
+    android:paddingHorizontal="20dp"
+    android:background="@android:color/white"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주문 상품 정보"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:stretchColumns="2"
+        android:background="@drawable/btn_sqr_gry_brdr_drkgry"
+        android:padding="10dp"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:text="주문 날싸"
+                android:textSize="15dp"
+                android:layout_column="0"
+                />
+
+            <TextView
+                android:id="@+id/tv_created_date"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="날짜"
+                android:textSize="15dp"
+                android:textColor="@android:color/black"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:text="주문 번호"
+                android:textSize="15dp"
+                android:layout_column="0"
+                />
+
+            <TextView
+                android:id="@+id/tv_order_number"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="주문 번호"
+                android:textSize="15dp"
+                android:textColor="@android:color/black"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:text="주문 상태"
+                android:textSize="15dp"
+                android:layout_column="0"
+                />
+
+            <TextView
+                android:id="@+id/tv_order_status"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="상태"
+                android:textSize="15dp"
+                android:textColor="@android:color/black"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="배송 정보"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_sqr_gry_brdr_drkgry"
+        android:padding="5dp"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_order_detail_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:scrollbars="none"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:layout_column="0"
+                android:text="주문 조회하기"
+                />
+
+            <Button
+                android:id="@+id/btn_package_track"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_column="1"
+                android:background="@drawable/arrow_short_right"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="결제 정보"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_sqr_gry_brdr_drkgry"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="결제 방법"
+            android:textSize="15dp"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="국민 뒷자리 숫자 1234"
+            android:textSize="15dp"
+            />
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="배송 주소"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_sqr_gry_brdr_drkgry"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_order_name"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="이름"
+            android:textSize="15dp"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/tv_order_address"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="주소1"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_order_address_detail"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="주소2"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_order_phone"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="연락처"
+            android:textSize="15dp"
+            />
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주문 요약"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_sqr_gry_brdr_drkgry"
+        android:padding="10dp"
+        >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:text="주문 합계: "
+                android:textSize="15dp"
+                android:textColor="@android:color/black"
+                />
+
+            <TextView
+                android:id="@+id/tv_total_order_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="가격"
+                android:gravity="right"
+                android:lines="1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="원"
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:text="배송비: "
+                android:textSize="15dp"
+                android:textColor="@android:color/black"
+                />
+
+            <TextView
+                android:id="@+id/tv_delivery_price"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="가격"
+                android:gravity="right"
+                android:lines="1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="원"
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:text="사용 정립금: "
+                android:textSize="15dp"
+                android:textColor="@android:color/black"
+                />
+
+            <TextView
+                android:id="@+id/tv_order_use_point"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:text="가격"
+                android:gravity="right"
+                android:lines="1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="원"
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="주문 총 가격: "
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                />
+
+            <TextView
+                android:id="@+id/tv_order_price"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="가격"
+                android:textColor="@android:color/holo_red_light"
+                android:gravity="right"
+                android:lines="1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="원"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/btn_order_product_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="확인" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

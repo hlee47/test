@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:paddingHorizontal="30dp"
+            android:paddingTop="30dp"
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                android:layout_marginVertical="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/payment"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_user_payment"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/btn_payment"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/arrow_short_right"
+                    />
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                android:layout_marginVertical="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/address"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="주소 정보"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/btn_user_address"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/arrow_short_right"
+                    />
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                android:layout_marginVertical="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/inquiry"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_inquiry"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/arrow_short_right"
+                    />
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                android:layout_marginVertical="10dp"
+
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/terms"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_terms_conditions"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/arrow_short_right"
+                    />
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                android:layout_marginVertical="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/terms"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="로그인"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/btn_log"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/arrow_short_right"
+                    />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:paddingHorizontal="30dp"
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                android:layout_marginVertical="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/exclamation"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_exclamation"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_version"
+                    />
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                />
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TableRow
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_chat"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

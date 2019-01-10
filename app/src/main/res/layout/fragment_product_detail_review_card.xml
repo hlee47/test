@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="#EEEEEE"
+    card_view:cardElevation="0dp"
+    card_view:cardUseCompatPadding="false"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/iv_review_user_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/kombu_tae"
+                />
+
+            <TextView
+                android:id="@+id/tv_review_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:gravity="center"
+                android:text="이름"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                />
+
+            <TextView
+                android:id="@+id/tv_review_created_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="날짜"
+                android:textSize="13sp"
+                android:textColor="@android:color/darker_gray"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+
+            <RatingBar
+                android:id="@+id/rb_review_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:numStars="5"
+                android:rating="3"
+                android:stepSize="1"
+                style="?android:ratingBarStyleSmall"
+                />
+
+        </LinearLayout>
+        
+        <HorizontalScrollView
+            android:id="@+id/hsv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_review_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tv_review_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:text="내용"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:lineSpacingExtra="7dp"
+            android:minLines="1"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_post_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/btn_sqr_gry_brdr_drkgry"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="스윌띠 답변"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_post_comment_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="날짜"
+                    android:textSize="15sp"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_post_comment_arrow"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/arrow_short_down"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_post_comment_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="답변"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

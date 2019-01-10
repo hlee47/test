@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:numberpicker="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:background="@android:color/white"
+        >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="카드별칭"
+                    android:layout_span="4"
+                    android:lines="1"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_sqr_gry_brdr_drkgry"
+                >
+
+                <Spinner
+                    android:id="@+id/spinner_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_span="4"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_sqr_gry_brdr_drkgry"
+                >
+
+                <EditText
+                    android:id="@+id/text_user_payment_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_span="4"
+                    android:hint="최대 10자리"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:maxLength="10"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/btn_sqr_gry_brdr_drkgry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="카드번호(카드번호 전체를 입력해주세요)"
+                    android:layout_span="4"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+                    android:id="@+id/text_user_payment_number1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:layout_column="0"
+                    android:background="@drawable/btn_sqr_gry_brdr_drkgry"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    />
+
+                <EditText
+                    android:id="@+id/text_user_payment_number2"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:layout_column="1"
+                    android:background="@drawable/btn_sqr_gry_brdr_drkgry"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+
+                    />
+
+                <EditText
+                    android:id="@+id/text_user_payment_number3"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:layout_column="2"
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:background="@drawable/btn_sqr_gry_brdr_drkgry"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+
+                    />
+
+                <EditText
+                    android:id="@+id/text_user_payment_number4"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:layout_column="3"
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:background="@drawable/btn_sqr_gry_brdr_drkgry"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="유효기간 월 MM"
+                    android:layout_span="2"
+                    android:layout_column="0"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="유효기간 년 YY"
+                    android:layout_span="2"
+                    android:layout_column="2"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.travijuu.numberpicker.library.NumberPicker
+                    android:id="@+id/number_picker_expiration_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_span="2"
+                    android:layout_column="0"
+                    android:textSize="20dp"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:imeOptions="actionNext"
+                    numberpicker:min="1"
+                    numberpicker:max="12"
+                    numberpicker:value="1"
+                    numberpicker:unit="1"
+                    />
+
+                <com.travijuu.numberpicker.library.NumberPicker
+                    android:id="@+id/number_picker_expiration_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_span="2"
+                    android:layout_column="2"
+                    android:textSize="20dp"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:imeOptions="actionNext"
+                    numberpicker:min="18"
+                    numberpicker:max="99"
+                    numberpicker:value="18"
+                    numberpicker:unit="1"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                >
+
+                <Button
+                    android:id="@+id/btn_payment_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="저장하기"
+                    android:layout_span="4"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+
+                <Button
+                    android:id="@+id/button_payment_remove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="지우기"
+                    android:layout_span="2"
+                    android:layout_column="0"
+                    />
+
+                <Button
+                    android:id="@+id/btn_payment_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="자주쓰는 카드로 설정"
+                    android:layout_span="2"
+                    android:layout_column="2"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="자주쓰는 신용카드는 최대 3개까지 등혹하실 수 있습니다."
+                    android:textSize="13dp"
+                    android:layout_span="4"
+                    />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="카드번호는 14자리에서 16자리까지 입력가능합니다.."
+                    android:textSize="13dp"
+                    android:layout_span="4"
+                    />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/table_layout_order_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/text_user_payment_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:inputType="numberPassword"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:layout_span="4"
+                    android:maxLength="2"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:hint="비밀번호 앞 2자리"
+                    android:background="@drawable/btn_sqr_gry_brdr_drkgry"
+                    android:paddingLeft="5dp"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="주민번호 앞 6자리 (인증번호)"
+                    android:layout_span="4"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/text_user_payment_verification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:inputType="numberPassword"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:maxLength="6"
+                    android:layout_span="4"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:hint="주민번호 앞 6자리"
+                    android:background="@drawable/btn_sqr_gry_brdr_drkgry"
+                    android:paddingLeft="5dp"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                >
+
+                <Button
+                    android:id="@+id/btn_order_payment_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="결제하기"
+                    android:layout_span="4"
+                    />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

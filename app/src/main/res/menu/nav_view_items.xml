@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_home"
+            android:title="홈" />
+        <item
+            android:id="@+id/menu_delivery"
+            android:title="주문정보" />
+        <item
+            android:id="@+id/menu_story"
+            android:title="스토리" />
+        <item
+            android:id="@+id/menu_user"
+            android:title="사용자정보" />
+
+        <item
+            android:id="@+id/menu_company"
+            android:title="회사소개" />
+
+        <item
+            android:id="@+id/menu_logout"
+            android:title="로그아웃" />
+
+    </group>
+
+</menu>

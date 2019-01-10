@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorText">#000000</color>
+    <color name="iconTint">#8F193C</color>
+
+    <color name="color_background">#ffffff</color>
+
+    <color name="color_home">#ffffff</color>
+    <color name="color_search">#ffffff</color>
+    <color name="color_notifications">#ffffff</color>
+
+    <color name="colorLightGray">#DDDEE0</color>
+
+    <color name="colorGold">#8F7859</color>
+</resources>

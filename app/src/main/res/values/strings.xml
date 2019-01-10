@@ -1,0 +1,52 @@
+<!DOCTYPE resources [
+    <!ENTITY copy "&#169;">
+    ]>
+<resources>
+    <string name="logo">sweelthy</string>
+
+    <string name="app_name">Test</string>
+    <string name="text_home">Home Fragment</string>
+    <string name="text_notifications">Notifications Fragment</string>
+    <string name="text_search">Search Fragment</string>
+
+    <string name="btm_nav_cart">장바구니</string>
+    <string name="btm_nav_order">주문하기</string>
+
+    <string name="drawer_open">1</string>
+    <string name="drawer_close">0</string>
+
+    <string name="text_home_title">USDA 미국유기농 재료 \n국내제조, 수제발효</string>
+    <string name="text_gift_title">할인코드 선물하면 \n10,000원씩 무제한 적립!</string>
+    <string name="text_order">주문하기</string>
+    <string name="text_address_list">주소 관리</string>
+    <string name="text_user_address">경기도 수원시 장안구 수일로 108, 1층</string>
+    <string name="text_user_payment">카드 정보</string>
+    <string name="text_inquiry">자주 묻는 질문</string>
+    <string name="text_terms_conditions">서비스 약관</string>
+    <string name="text_exclamation">버전 정보</string>
+    <string name="text_version">1.8.2</string>
+    <string name="text_add_address">주소 넣기</string>
+    <string name="text_default_address">적용하기</string>
+    <string name="text_one_week">1주플랜\n\n6병</string>
+    <string name="text_two_weeks">2주플랜\n\n12병</string>
+    <string name="text_six_bottles">6병</string>
+    <string name="text_twelve_bottles">12병</string>
+    <string name="text_choose_product">상품 선택</string>
+    <string name="text_chat">실시간 문의</string>
+    <string name="text_my_code">내 할인코드</string>
+    <string name="text_my_points">적립금</string>
+    <string name="text_forward_code">할인코드 선물하기</string>
+    <string name="text_enter_code">친구 할인코드 입력하기</string>
+    <string name="text_delivery_title">주문된 상품이 없습니다. \n지금 주문해 보세요.</string>
+    <string name="text_kombutea">sweelthy kombu tae</string>
+    <string name="text_with_bullet">\u25CF</string>
+    <string name="text_remove">지우기</string>
+    <string name="text_edit">수정하기</string>
+    <string name="text_default">적용하기</string>
+
+    <string name="facebook_app_id">2231981853679885</string>
+    <string name="fb_login_protocol_scheme">fb2231981853679885</string>
+    <string name="copyright" formatted="false"><html><body>&copy; 스윌띠 ALL RIGHTS RESERVED</body></html></string>
+
+    <string name="spinner_option_prompt">옵션을 선택해 주세요</string>
+</resources>

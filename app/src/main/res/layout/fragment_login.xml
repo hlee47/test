@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_background"
+    >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="소셜 로그인 하기"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+
+        <Button
+            android:id="@+id/button_login_naver"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="네이버 로그인"
+            />
+
+        <Button
+            android:id="@+id/btn_login_kakako"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="카카오톡 로그인"
+            />
+
+        <Button
+            android:id="@+id/btn_login_facebook"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="페이스북 로그인"
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--<com.facebook.login.widget.LoginButton-->
+                <!--android:id="@+id/login_button"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:layout_marginBottom="30dp" />-->
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="아이디 로그인 하기"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+
+        <TableLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:padding="5dp"
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:id="@+id/et_user_idoremail"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:hint="아이디 또는 이메일을 입력해주세요"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/btn_sqr_gry_brdr_drkgry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:id="@+id/et_user_password"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:hint="비밀번호를 입력해 주세요"
+                    android:inputType="textWebPassword"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/btn_sqr_gry_brdr_drkgry"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+
+                <RadioGroup
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    >
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="이메일주소저장"
+                        android:textSize="15sp"
+                        />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="자동로그인"
+                        android:textSize="15sp"
+                        />
+
+                </RadioGroup>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:text="로그인"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/tv_find_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="아이디 찾기"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_find_pw"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="비밀번호 찾기"
+                    android:gravity="center"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="회원가입"
+                    android:gravity="center"
+                    />
+
+            </TableRow>
+
+        </TableLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

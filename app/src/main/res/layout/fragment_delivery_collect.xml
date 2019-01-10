@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:background="@drawable/btn_sqr_gry_brdr_drkgry"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="수거준비중"
+                android:textSize="20dp"
+                android:gravity="left"
+                android:paddingLeft="20dp"
+                android:paddingVertical="10dp"
+                android:textColor="@android:color/black"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_collect_ready"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:scrollbars="none"
+                android:nestedScrollingEnabled="true"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:background="@drawable/btn_sqr_gry_brdr_drkgry"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="수거중"
+                android:textSize="20dp"
+                android:gravity="left"
+                android:paddingLeft="20dp"
+                android:paddingVertical="10dp"
+                android:textColor="@android:color/black"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_collect_open"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:scrollbars="none"
+                android:nestedScrollingEnabled="true"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:background="@drawable/btn_sqr_gry_brdr_drkgry"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="수거완료"
+                android:textSize="20dp"
+                android:gravity="left"
+                android:paddingLeft="20dp"
+                android:paddingVertical="10dp"
+                android:textColor="@android:color/black"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_collect_closed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:scrollbars="none"
+                android:nestedScrollingEnabled="false"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_background"
+    >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:background="@android:color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기본정보"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:stretchColumns="2"
+            android:background="@drawable/btn_sqr_gry_brdr_drkgry"
+            android:padding="10dp"
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:text="등기번호"
+                    android:textSize="15dp"
+                    android:layout_column="0"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_invoice_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="번호"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/black"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:text="보내는분"
+                    android:textSize="15dp"
+                    android:layout_column="0"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_sender_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="이름"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/black"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:text="받는분"
+                    android:textSize="15dp"
+                    android:layout_column="0"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_receiver_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="이름"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/black"
+                    />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="배송 진행상황"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_sqr_gry_brdr_drkgry"
+            android:padding="5dp"
+            android:stretchColumns="*"
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="처리일시"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="현재위치"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="배송상태"
+                    android:gravity="center"
+                    />
+
+            </TableRow>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_order_detail_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:scrollbars="none"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                />
+
+        </TableLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

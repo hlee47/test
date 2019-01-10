@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_item_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="280dp"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="3dp"
+            >
+
+            <ImageView
+                android:id="@+id/image_view_product"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/tv_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="스윌띠"
+                android:textSize="13dp"
+                />
+
+            <TextView
+                android:id="@+id/text_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="제품 이름"
+                android:textSize="15dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                android:lines="1"
+                android:maxLines="1"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingHorizontal="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/text_product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="제품 가격"
+                    android:textSize="13dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="원"
+                    android:textSize="13dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_price_discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingHorizontal="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/text_product_price_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:text="제품 할인 가격"
+                    android:textSize="15dp"
+                    android:textColor="#8F7859"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:text="원"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+
